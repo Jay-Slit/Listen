@@ -1,12 +1,12 @@
 local function handler(msg, editbox)
-  print(facts[math.random(facts.length)]);
+  print(facts[math.random(table.getn(facts))]);
 end
 
 SLASH_LISTEN1 = '/listenhere'
 SlashCmdList["LISTEN"] = handler;
 
 facts = {
-  "Most American car horns honk in the key of F.",
+"Most American car horns honk in the key of F.",
 "The name Wendy was made up for the book \"Peter Pan.\"",
 "Barbie's full name is Barbara Millicent Roberts.",
 "Every time you lick a stamp, you consume 1/10 of a calorie.",
