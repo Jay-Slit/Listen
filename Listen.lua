@@ -1,5 +1,6 @@
 local function handler(msg, editbox)
-  print(facts[math.random(table.getn(facts))]);
+  SendChatMessage("Listen...", "GUILD", nil);
+  SendChatMessage(facts[math.random(table.getn(facts))], "GUILD", nil);
 end
 
 SLASH_LISTEN1 = '/listenhere'
